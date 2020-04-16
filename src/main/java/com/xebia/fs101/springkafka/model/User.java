@@ -5,6 +5,10 @@ public class User {
     private String college;
     private int rollno;
 
+    public User() {
+
+    }
+
     public User(String name, String college, int rollno) {
 
         this.name = name;
@@ -25,5 +29,15 @@ public class User {
     public int getRollno() {
 
         return rollno;
+    }
+
+    @Override
+    public String toString() {
+
+        return "User{" +
+                "name='" + name + '\'' +
+                ", college='" + college + '\'' +
+                ", rollno=" + rollno +
+                '}';
     }
 }
